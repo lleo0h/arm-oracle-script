@@ -46,6 +46,8 @@ while True:
       break
     except oci.exceptions.ServiceError as e:
       debug(e.message)
+    except Exception as e:
+      debug(e)
   else:
     r = 30 + random.randrange(1, 5)
     debug(f"Next attempt in {r} seconds.")
