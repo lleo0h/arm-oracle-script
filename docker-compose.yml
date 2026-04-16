@@ -1,0 +1,9 @@
+services:
+  oracle-arm-bot:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: oracle-arm-bot
+    volumes:
+      - ~/.oci:/root/.oci
+    tty: true
