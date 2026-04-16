@@ -12,4 +12,4 @@ COPY . .
 
 RUN chmod 600 ampere || true
 
-CMD ["python", "main.py"]
+CMD ["python", "src/main.py"]
