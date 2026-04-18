@@ -11,7 +11,7 @@ IMAGE_ID = environment.get("IMAGE_ID")
 PUBLIC_KEY_PATH = environment.get("PUBLIC_KEY_PATH")
 
 # Machine
-OCPUS = 4
-MEMORY_IN_GB = 24
-STORAGE_IN_GB = 100
+OCPUS = environment.get("OCPUS") or 4
+MEMORY_IN_GB = environment.get("MEMORY_IN_GB") or 24
+STORAGE_IN_GB = environment.get("STORAGE_IN_GB") or 100
 SHAPE = "VM.Standard.A1.Flex"
